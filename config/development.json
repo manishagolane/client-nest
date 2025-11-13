@@ -1,0 +1,60 @@
+{
+  "environment": "development",
+  "server": {
+    "readTimeout": 5,
+    "writeTimeout": 5,
+    "timeout": 5,
+    "port": ":8010",
+    "grpcPort": ":40002"
+    },
+  "db": {
+    "host": "localhost",
+    "user": "crm_user",
+    "password": "j8tmpc4kmFM4u94w$$9",
+    "dbname": "crm_db",
+    "sslmode": "disable",
+    "port": "5432",
+    "timeout": 2
+      },
+  "redis": {
+    "address": "localhost:6379",
+    "password": "",
+    "db": 1,
+    "lockDB": 2,
+    "lockExpiry": 5,
+    "poolSize": 100,
+    "userChannel": "user"
+    },
+  "authentication": {
+    "jwt": {
+      "customer_secret": "",
+      "employee_secret": ""
+   }
+  },
+  "otp": {
+    "grpcServer": "localhost:40002",
+    "namespace": "crm",
+    "grpcTimeout": 5,
+    "ttl": 300,
+    "requestTimeDifference": 5,
+    "sms": {
+      "templates": {
+        "reset": "RESET",
+        "login": "LOGIN"
+      }
+    },
+    "email": {
+      "templates": {
+        "reset": "RESET",
+        "login": "LOGIN"
+      }
+    }
+  },
+  "notification": {
+    "grpcServer": "localhost:40002",
+    "timeout": 2,
+    "email": "manishagolane@gmail.com"
+  },
+  "aws": {
+  }
+}

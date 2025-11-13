@@ -1,0 +1,6 @@
+CREATE TABLE permissions (
+  id VARCHAR(26) PRIMARY KEY,
+  name TEXT UNIQUE NOT NULL,
+  object TEXT NOT NULL,
+  action TEXT NOT NULL
+);
